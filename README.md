@@ -11,7 +11,7 @@
 
 # Dani
 
-### Backend Systems · Runtime Engineering · Private Product Tooling
+### Backend Systems · Runtime Engineering · Product Tooling
 
 ![Uruguay](https://img.shields.io/badge/Based_in-Uruguay-1DA1F2?style=flat-square)
 ![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=flat-square&logo=php&logoColor=white)
@@ -25,27 +25,45 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Data_Modeling-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-**I build backend systems that are explainable, reviewable and meant to survive real product use.**
+**I build backend systems that are meant to be opened, inspected, debugged, shipped and improved.**
 
 </div>
 
 ---
 
-## Profile snapshot
+## What I am actually building toward
 
-I'm Dani, a developer from Uruguay focused on backend architecture, runtime systems, automation and product-grade tooling.
+I'm Dani, a developer from Uruguay focused on backend architecture, runtime systems, automation and private product tooling.
 
-I like software that can be inspected instead of guessed. If a system produces a result, I want the codebase to show the context, the reason, the confidence and the next step without needing a magic dashboard to explain it.
+I like projects where the important parts are not hidden behind a pretty screen. The code should show how the system thinks: where the data comes from, what state exists, which module made a choice, what happens when something fails and how the next developer can understand it without guessing.
 
-Most of my current work is private because it is being built as product work, not as a public demo. Public GitHub shows the direction, style and technical taste. Private work keeps the actual product logic protected.
+A lot of my current work is private because it is being built as product work, not as a public demo. Public GitHub shows the direction, the engineering taste and the way I organize technical ideas. The product logic stays protected until it is ready.
 
 ```txt
-Main direction:   backend + runtime systems + product tooling
-Preferred style:  small modules, clear boundaries, reviewable behavior
-Current focus:    private product work, Laravel packages, runtime pipelines
-Operating system: Linux daily driver
-Engineering rule: if a system decides something, it should be able to explain it
+Main direction:   backend systems, runtime pipelines, product tooling
+Preferred style:  small modules, clear boundaries, useful logs, real docs
+Daily setup:      Linux, Git, Docker, local-first workflows
+Engineering rule: if a system does something important, it should explain itself
 ```
+
+---
+
+## The part I care about
+
+I do not build projects just to fill a profile.
+
+I care about the parts people usually skip because they are not flashy:
+
+```txt
+- what happens when state changes?
+- where does the decision come from?
+- can the behavior be reviewed later?
+- does the setup work twice, or only once?
+- are the docs describing reality or decoration?
+- can one module change without breaking the whole thing?
+```
+
+That is the kind of engineering I like: practical, inspectable, and strong enough to survive real changes.
 
 ---
 
@@ -76,7 +94,7 @@ Engineering rule: if a system decides something, it should be able to explain it
 - state-aware processing
 - Redis-backed runtime state
 - reliability checks
-- degraded-mode behavior
+- fallback behavior
 - release validation
 - production guardrails
 
@@ -150,28 +168,21 @@ class Dani:
 
 ---
 
-## How I think about systems
+## Project DNA
 
-A useful system should not only answer:
-
-```txt
-Did something happen?
-```
-
-It should also answer:
+The kind of projects I care about usually have these traits:
 
 ```txt
-Why did it happen?
-What context existed?
-Which module decided that?
-Can this be reviewed later?
-What happens if a dependency is unavailable?
-What is the safest next step?
+- the internals are modular
+- setup is reproducible
+- runtime state is handled deliberately
+- release checks catch mistakes early
+- docs are treated as part of the product
+- behavior can be reviewed without guessing
+- boring reliability matters more than cosmetic complexity
 ```
 
-I prefer codebases where the internal behavior is visible: logs that mean something, states that can be reviewed, errors that point to the real failure and documentation that does not lie about how the system runs.
-
-The goal is not to make a project look complicated. The goal is to make it stable enough that future changes do not turn into chaos.
+I like building things that feel practical: tools that can be deployed, reviewed, debugged and improved without needing to rewrite the whole project every time a new requirement appears.
 
 ---
 
@@ -184,27 +195,8 @@ Runtime:         event pipelines, state transitions, observability, reliability 
 Infra:           Linux, Docker, Git, GitHub Actions, Redis
 Databases:       PostgreSQL, SQLite
 Workflow:        local-first development, scripts, docs, release checks
-Mindset:         explainable, audit-friendly, product-oriented
+Mindset:         explainable, reviewable, product-oriented
 ```
-
----
-
-## Project DNA
-
-The kind of projects I care about usually have these traits:
-
-```txt
-- the internals are modular
-- the system can explain its own behavior
-- private logic stays private until it is ready
-- setup is reproducible
-- runtime state is handled deliberately
-- release checks catch mistakes early
-- docs are treated as part of the product
-- boring reliability matters more than cosmetic complexity
-```
-
-I like building things that feel practical: tools that can be deployed, reviewed, debugged and improved without needing to rewrite the whole project every time a new requirement appears.
 
 ---
 
@@ -213,6 +205,8 @@ I like building things that feel practical: tools that can be deployed, reviewed
 Some of my strongest current work is private by design.
 
 That does not mean there is nothing to show. It means the public profile shows the direction and engineering principles, while the product internals stay protected until they are ready to be shared properly.
+
+The public part is the signal. The private part is the product.
 
 ---
 
