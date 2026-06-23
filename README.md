@@ -9,8 +9,6 @@
 ╚═════╝  ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝
 ```
 
-# Dani
-
 ### Backend Systems · Runtime Engineering · Product Tooling
 
 ![Uruguay](https://img.shields.io/badge/Based_in-Uruguay-1DA1F2?style=flat-square)
