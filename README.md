@@ -1,6 +1,6 @@
 <div align="center">
 
-# Dani / Genesis
+# Dai
 
 ### Backend Systems · Runtime Engineering · Product Tooling
 
